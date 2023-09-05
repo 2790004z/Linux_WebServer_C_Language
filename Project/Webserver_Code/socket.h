@@ -5,7 +5,7 @@
 int initSocket(short port);
 
 // Accept client connect
-int accpetClient(void);
+int acceptClient(void);
 
 // Accept request
 char* recvRequest(int conn);
