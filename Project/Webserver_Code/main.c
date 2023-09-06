@@ -9,7 +9,7 @@ int main(int argc, char* argv[]){
 	}
 
 	// Run server
-	if (runServer(argc < 3 ? "../WebServer_Home" : argv[2]) == -1){
+	if (runServer(argc < 3 ? "./../Webserver_Home" : argv[2]) == -1){
 		return EXIT_FAILURE;
 	}
 
