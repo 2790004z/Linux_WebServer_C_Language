@@ -32,7 +32,7 @@ int parseRequest(char const* req, HTTP_REQUEST* hreq){
 		return -1;
 	}
 
-	if (strcasecmp(hreq->protocol, "HTTP/1.0") && strcasecmp(hreq->protocol, "HTTP/1/1")){ // This server suport HTTP/1.0 && HTTP/1.1
+	if (strcasecmp(hreq->protocol, "HTTP/1.0") && strcasecmp(hreq->protocol, "HTTP/1.1")){ // This server suport HTTP/1.0 && HTTP/1.1
 		printf("Process:%d. Thread:%ld>>>>>> Invaild protocol.\n", getpid(), syscall(SYS_gettid));
 		return -1;
 	}

@@ -48,11 +48,11 @@ void* client(void* arg){
 		if (searchResource(path) == -1){
 			hres.status = 404;
 			strcpy(hres.description, "Not Found");
-			strcpy(path, "../home/404.html");
+			strcpy(path, "../Webserver_Home/404.html");
 		} else if (identifyType(path, hres.type) == -1){
 			hres.status = 404;
 			strcpy(hres.description, "Not Found");
-			strcpy(path, "../home/404.html");
+			strcpy(path, "../Webserver_Home/404.html");
 		}
 
 		struct stat st;
