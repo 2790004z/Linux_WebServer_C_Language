@@ -11,7 +11,7 @@ Makefile can provide quick compilation and generation of executable files.
 # Quickly compile and generate .o files and executable files
 $ make
 # Quickly remove all of the .o files and executable files
-$ clean
+$ make clean
 ```
 
 
